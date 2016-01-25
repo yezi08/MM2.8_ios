@@ -1,6 +1,7 @@
 <ion-view view-title="{{ 'mm.settings.language' | translate }}" >
     <ion-content>
         <ul class="list">
+         <!-- xjtlu change, 2016 Jan 21th, hide the function of choosing a language
             <li class="item item-input item-select">
                 <div class="input-label" id="mm-settings-languagelabel">
                     {{ 'mm.settings.language' | translate }}
@@ -8,6 +9,7 @@
                 <select ng-model="selectedLanguage" ng-options="code as name for (code, name) in langs" ng-change="languageChanged(selectedLanguage)" aria-labelledby="mm-settings-languagelabel">
                 </select>
             </li>
+        -->
              <li class="item item-toggle item-text-wrap" ng-if="showReport">
                 <p id="mm-settings-reportlabel" class="item-heading">{{ 'mm.settings.reportinbackground' | translate }}</p>
                 <label class="toggle" aria-labelledby="mm-settings-reportlabel">
