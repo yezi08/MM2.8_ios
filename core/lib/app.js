@@ -36,7 +36,7 @@ angular.module('mm.core')
 .provider('$mmApp', function($stateProvider) {
 
     /** Define the app storage schema. */
-    var DBNAME = 'MoodleMobile',
+    var DBNAME = 'ICEMobile',
         dbschema = {
             stores: []
         },

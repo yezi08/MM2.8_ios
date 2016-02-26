@@ -23,13 +23,13 @@ describe('$mmConfig', function() {
         timeout = $timeout;
 
         httpBackend.expectGET('config.json')
-            .respond(200, {'app_id': 'com.moodle.moodlemobile'});
+            .respond(200, {'app_id': 'cn.edu.xjtlu.icemobile'});
     }));
 
     it('config can be read from config.json', function(done) {
         mmConfig.get('app_id')
             .then(function(data) {
-                expect(data).toEqual('com.moodle.moodlemobile');
+                expect(data).toEqual('cn.edu.xjtlu.icemobile');
             }, function() {
                 except(false).toEqual(true);
             })

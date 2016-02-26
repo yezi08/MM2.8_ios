@@ -119,7 +119,7 @@ angular.module('mm.core')
                     return;
                 }
 
-                $log.debug('Migrating site from MoodleMobile 1: ' + siteid);
+                $log.debug('Migrating site from ICEMobile 1: ' + siteid);
                 var site = localStorage.getItem('sites-'+siteid),
                     infos;
 

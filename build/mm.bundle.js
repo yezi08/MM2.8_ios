@@ -183,7 +183,7 @@ angular.module('ngIOS9UIWebViewPatch', ['ng']).config(["$provide", function($pro
 }]);
 angular.module('mm.core')
 .provider('$mmApp', ["$stateProvider", function($stateProvider) {
-        var DBNAME = 'MoodleMobile',
+        var DBNAME = 'ICEMobile',
         dbschema = {
             stores: []
         },
@@ -3834,7 +3834,7 @@ angular.module('mm.core')
                 if (!siteid) {
                     return;
                 }
-                $log.debug('Migrating site from MoodleMobile 1: ' + siteid);
+                $log.debug('Migrating site from ICEMobile 1: ' + siteid);
                 var site = localStorage.getItem('sites-'+siteid),
                     infos;
                 if (site) {
@@ -5705,7 +5705,7 @@ angular.module('mm.core.login', [])
         }
     }
     function appLaunchedByURL(url) {
-        var ssoScheme = 'moodlemobile://token=';
+        var ssoScheme = 'icemobile://token=';
         if (url.indexOf(ssoScheme) == -1) {
             return false;
         }
@@ -19099,7 +19099,7 @@ angular.module('mm.addons.remotestyles')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodle.moodlemobile",
+    "app_id" : "cn.edu.xjtlu.icemobile",
     "versioncode" : "2009",
     "versionname" : "2.8",
     "cache_expiration_time" : 300000,
